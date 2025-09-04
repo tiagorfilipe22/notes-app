@@ -3,28 +3,19 @@ notes_app_env/
 venv/
 env/
 
-# Base de dados (opcional - podes incluir exemplo)
-data/*.db
-!data/example.db
-
 # Cache Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
+# Base de dados
+data/*.db
+
 # IDE
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # Sistema
 .DS_Store
 Thumbs.db
-
-# Logs
-*.log
-
-# Configurações locais
-config/local_settings.py
