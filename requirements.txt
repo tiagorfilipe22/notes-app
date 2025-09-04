@@ -1,0 +1,5 @@
+customtkinter==5.2.2
+darkdetect==0.8.0
+Markdown==3.8.2
+packaging==25.0
+Pygments==2.19.2
