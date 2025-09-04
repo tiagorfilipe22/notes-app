@@ -64,6 +64,16 @@ class NotesApp:
         button_frame.pack(pady=20, padx=20, fill="x")
         
         # Botões principais
+
+        daily_btn = ctk.CTkButton(
+            button_frame,
+            text="Daily",
+            height=40,
+            font=ctk.CTkFont(size=14),
+            command=self.open_daily
+        )
+        daily_btn.pack(side="left", padx=(10, 5), fill="x", expand=True)
+
         new_note_btn = ctk.CTkButton(
             button_frame,
             text="📄 Nova Nota",
@@ -125,6 +135,9 @@ class NotesApp:
             height=25
         )
         self.status_bar.pack(side="bottom", fill="x", padx=5, pady=5)
+
+    def open_daily(self):
+        self.text_area.delete("0.0", "end")
     
     def new_note(self):
         """Criar nova nota"""
